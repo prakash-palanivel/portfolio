@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Prakash Palanivel | Portfolio</title>
 
     <style>
@@ -11,7 +14,8 @@
             margin:0;
             padding:0;
             box-sizing:border-box;
-            font-family:Segoe UI, sans-serif;
+            font-family:'Segoe UI',sans-serif;
+            scroll-behavior:smooth;
         }
 
         body{
@@ -20,58 +24,117 @@
             line-height:1.6;
         }
 
+        /* NAVBAR */
+
+        .navbar{
+            position:fixed;
+            top:0;
+            width:100%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 60px;
+            background:#161b22;
+            border-bottom:1px solid #30363d;
+            z-index:1000;
+        }
+
+        .logo{
+            font-size:24px;
+            font-weight:bold;
+            color:#58a6ff;
+        }
+
+        .nav-links{
+            list-style:none;
+            display:flex;
+            gap:30px;
+        }
+
+        .nav-links a{
+            text-decoration:none;
+            color:white;
+            transition:0.3s;
+            font-size:16px;
+        }
+
+        .nav-links a:hover{
+            color:#58a6ff;
+        }
+
+        /* HERO SECTION */
+
         header{
             height:100vh;
             display:flex;
+            flex-direction:column;
             justify-content:center;
             align-items:center;
             text-align:center;
-            flex-direction:column;
-            background:linear-gradient(135deg,#0d1117,#161b22);
             padding:20px;
+            background:linear-gradient(135deg,#0d1117,#161b22);
         }
 
         header h1{
-            font-size:60px;
+            font-size:65px;
             margin-bottom:15px;
         }
 
         header h2{
-            color:#58a6ff;
             font-size:28px;
-            margin-bottom:20px;
+            color:#58a6ff;
+            margin-bottom:25px;
         }
 
         header p{
-            max-width:700px;
+            max-width:800px;
             font-size:18px;
             color:#c9d1d9;
+            margin-bottom:30px;
+        }
+
+        .hero-buttons{
+            display:flex;
+            gap:20px;
+            flex-wrap:wrap;
+            justify-content:center;
         }
 
         .btn{
-            margin-top:30px;
-            display:inline-block;
-            padding:12px 25px;
+            padding:14px 28px;
             background:#238636;
             color:white;
             text-decoration:none;
             border-radius:8px;
             transition:0.3s;
+            font-weight:bold;
         }
 
         .btn:hover{
             background:#2ea043;
+            transform:translateY(-3px);
         }
+
+        .btn-secondary{
+            background:#21262d;
+            border:1px solid #30363d;
+        }
+
+        .btn-secondary:hover{
+            background:#30363d;
+        }
+
+        /* SECTIONS */
 
         section{
             max-width:1100px;
             margin:auto;
-            padding:80px 20px;
+            padding:90px 20px;
         }
 
         h3{
-            font-size:35px;
-            margin-bottom:30px;
+            font-size:38px;
+            margin-bottom:35px;
             color:#58a6ff;
             border-bottom:2px solid #30363d;
             padding-bottom:10px;
@@ -82,6 +145,8 @@
             color:#c9d1d9;
         }
 
+        /* SKILLS */
+
         .skills-grid{
             display:grid;
             grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -90,43 +155,54 @@
 
         .skill-card{
             background:#161b22;
-            padding:25px;
-            border-radius:12px;
+            padding:30px;
+            border-radius:14px;
             border:1px solid #30363d;
             transition:0.3s;
         }
 
         .skill-card:hover{
-            transform:translateY(-5px);
+            transform:translateY(-8px);
             border-color:#58a6ff;
         }
 
         .skill-card h4{
-            margin-bottom:15px;
+            margin-bottom:20px;
             color:#58a6ff;
+            font-size:22px;
         }
+
+        /* PROJECTS */
 
         .project{
             background:#161b22;
-            padding:25px;
-            border-radius:12px;
+            padding:30px;
+            border-radius:14px;
             border:1px solid #30363d;
             margin-bottom:25px;
             transition:0.3s;
         }
 
         .project:hover{
-            transform:translateY(-5px);
+            transform:translateY(-8px);
             border-color:#58a6ff;
         }
 
         .project h4{
             margin-bottom:15px;
             color:#58a6ff;
+            font-size:24px;
         }
+
+        /* CONTACT */
 
         .contact{
             text-align:center;
+        }
+
+        .contact p{
+            margin-bottom:15px;
+            font-size:18px;
         }
 
         .contact a{
@@ -134,12 +210,48 @@
             text-decoration:none;
         }
 
+        .contact a:hover{
+            text-decoration:underline;
+        }
+
+        /* FOOTER */
+
         footer{
             text-align:center;
             padding:30px;
             background:#161b22;
-            margin-top:40px;
             color:#8b949e;
+            margin-top:40px;
+        }
+
+        /* MOBILE */
+
+        @media(max-width:768px){
+
+            .navbar{
+                flex-direction:column;
+                gap:15px;
+                padding:20px;
+            }
+
+            .nav-links{
+                gap:15px;
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            header h1{
+                font-size:42px;
+            }
+
+            header h2{
+                font-size:22px;
+            }
+
+            h3{
+                font-size:30px;
+            }
+
         }
 
     </style>
@@ -147,6 +259,27 @@
 </head>
 
 <body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Prakash Palanivel
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
 
     <header>
 
@@ -162,32 +295,51 @@
             Virtualization, and Enterprise IT Operations.
         </p>
 
-        <a class="btn" href="https://github.com/prakash-palanivel" target="_blank">
-            View GitHub Profile
-        </a>
+        <div class="hero-buttons">
+
+            <a class="btn"
+               href="https://github.com/prakash-palanivel"
+               target="_blank">
+                View GitHub
+            </a>
+
+            <a class="btn btn-secondary"
+               href="#"
+               target="_blank">
+                Download Resume
+            </a>
+
+        </div>
 
     </header>
 
-    <section>
+    <!-- ABOUT -->
+
+    <section id="about">
 
         <h3>About Me</h3>
 
         <p class="about">
+
             IT Infrastructure professional with 8+ years of experience in
             System Administration, Enterprise IT Support, Infrastructure
             Management, PowerShell Automation, Active Directory Administration,
             Virtualization, and Cloud Collaboration platforms.
+
         </p>
 
     </section>
 
-    <section>
+    <!-- SKILLS -->
+
+    <section id="skills">
 
         <h3>Technical Skills</h3>
 
         <div class="skills-grid">
 
             <div class="skill-card">
+
                 <h4>Infrastructure</h4>
 
                 <p>
@@ -197,9 +349,11 @@
                     Hyper-V<br>
                     Nutanix
                 </p>
+
             </div>
 
             <div class="skill-card">
+
                 <h4>Automation</h4>
 
                 <p>
@@ -208,9 +362,11 @@
                     Reporting Automation<br>
                     Infrastructure Monitoring
                 </p>
+
             </div>
 
             <div class="skill-card">
+
                 <h4>Cloud & Collaboration</h4>
 
                 <p>
@@ -219,13 +375,16 @@
                     Teams Administration<br>
                     Cloud Management
                 </p>
+
             </div>
 
         </div>
 
     </section>
 
-    <section>
+    <!-- PROJECTS -->
+
+    <section id="projects">
 
         <h3>Featured Projects</h3>
 
@@ -264,7 +423,9 @@
 
     </section>
 
-    <section class="contact">
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
 
         <h3>Contact</h3>
 
@@ -275,8 +436,6 @@
             </a>
         </p>
 
-        <br>
-
         <p>
             GitHub:
             <a href="https://github.com/prakash-palanivel" target="_blank">
@@ -286,6 +445,8 @@
 
     </section>
 
+    <!-- FOOTER -->
+
     <footer>
 
         © 2026 Prakash Palanivel | Portfolio Website
@@ -293,4 +454,5 @@
     </footer>
 
 </body>
+
 </html>
