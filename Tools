@@ -347,6 +347,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             <li><a href="#experience">Experience</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#tools">Tools</a></li>
+            <li><a href="#achievements">Achievements</a></li>
             <li><a href="#contact">Contact</a></li>
 
         </ul>
@@ -752,6 +753,75 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                 PowerShell<br>
                 Microsoft 365<br>
                 Group Policy
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements">
+
+    <h3>Professional Achievements</h3>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+
+            <h4>
+                99.9% Infrastructure Uptime
+            </h4>
+
+            <p>
+                Maintained stable enterprise infrastructure
+                operations with proactive monitoring,
+                patch management, and incident response.
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h4>
+                PowerShell Automation
+            </h4>
+
+            <p>
+                Developed automation scripts for
+                monitoring, reporting, and administrative
+                task optimization.
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h4>
+                Enterprise Infrastructure Management
+            </h4>
+
+            <p>
+                Managed production servers,
+                virtualization platforms,
+                Active Directory, and Microsoft 365
+                environments.
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h4>
+                Monitoring & Security Operations
+            </h4>
+
+            <p>
+                Implemented infrastructure monitoring,
+                vulnerability management,
+                firewall administration,
+                and patch management solutions.
             </p>
 
         </div>
