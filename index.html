@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Prakash Palanivel | Portfolio</title>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <style>
 
@@ -166,12 +168,14 @@
             border-color:#58a6ff;
         }
 
-        .skill-card h4{
-            margin-bottom:20px;
-            color:#58a6ff;
-            font-size:22px;
-        }
-
+  .skill-card h4{
+    margin-bottom:20px;
+    color:#58a6ff;
+    font-size:22px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
         /* PROJECTS */
 
         .project{
@@ -400,56 +404,64 @@
 
     <!-- SKILLS -->
 
-    <section id="skills">
+<section id="skills">
 
-        <h3>Technical Skills</h3>
+    <h3>Technical Skills</h3>
 
-        <div class="skills-grid">
+    <div class="skills-grid">
 
-            <div class="skill-card">
+        <div class="skill-card">
 
-                <h4>Infrastructure</h4>
+            <h4>
+                <i class="fa-brands fa-windows"></i>
+                Infrastructure
+            </h4>
 
-                <p>
-                    Windows Server<br>
-                    Active Directory<br>
-                    Group Policy<br>
-                    Hyper-V<br>
-                    Nutanix
-                </p>
-
-            </div>
-
-            <div class="skill-card">
-
-                <h4>Automation</h4>
-
-                <p>
-                    PowerShell<br>
-                    Monitoring Scripts<br>
-                    Reporting Automation<br>
-                    Infrastructure Monitoring
-                </p>
-
-            </div>
-
-            <div class="skill-card">
-
-                <h4>Cloud & Collaboration</h4>
-
-                <p>
-                    Microsoft 365<br>
-                    SharePoint<br>
-                    Teams Administration<br>
-                    Cloud Management
-                </p>
-
-            </div>
+            <p>
+                Windows Server<br>
+                Active Directory<br>
+                Group Policy<br>
+                Hyper-V<br>
+                Nutanix
+            </p>
 
         </div>
 
-    </section>
+        <div class="skill-card">
 
+            <h4>
+                <i class="fa-solid fa-terminal"></i>
+                Automation
+            </h4>
+
+            <p>
+                PowerShell<br>
+                Monitoring Scripts<br>
+                Reporting Automation<br>
+                Infrastructure Monitoring
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h4>
+                <i class="fa-solid fa-cloud"></i>
+                Cloud & Collaboration
+            </h4>
+
+            <p>
+                Microsoft 365<br>
+                SharePoint<br>
+                Teams Administration<br>
+                Cloud Management
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
     <!-- PROJECTS -->
 
     <section id="projects">
