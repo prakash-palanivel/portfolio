@@ -345,6 +345,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#tools">Tools</a></li>
             <li><a href="#contact">Contact</a></li>
 
         </ul>
@@ -648,7 +650,115 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         </div>
 
     </section>
+<!-- CERTIFICATIONS -->
 
+<section id="certifications">
+
+    <h3>Certifications</h3>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+
+            <h4>
+                Microsoft Career Essentials
+            </h4>
+
+            <p>
+                Microsoft & LinkedIn Learning
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h4>
+                CCNA
+            </h4>
+
+            <p>
+                Cisco Certified Network Associate
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h4>
+                Windows Server Administration
+            </h4>
+
+            <p>
+                Windows Server & Active Directory Administration
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h4>
+                Microsoft 365 Administration
+            </h4>
+
+            <p>
+                Microsoft 365 Administration & Collaboration Tools
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- TOOLS & TECHNOLOGIES -->
+
+<section id="tools">
+
+    <h3>Tools & Technologies</h3>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+
+            <h4>Cloud & Virtualization</h4>
+
+            <p>
+                Microsoft Azure<br>
+                Nutanix<br>
+                Hyper-V<br>
+                VMware
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h4>Monitoring & Security</h4>
+
+            <p>
+                Zabbix<br>
+                Nessus<br>
+                Sophos Firewall<br>
+                WSUS
+            </p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h4>Administration & Automation</h4>
+
+            <p>
+                Active Directory<br>
+                PowerShell<br>
+                Microsoft 365<br>
+                Group Policy
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
     <!-- CONTACT -->
 
     <section id="contact" class="contact">
