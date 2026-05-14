@@ -300,7 +300,53 @@ header h1{
         .contact a:hover{
             text-decoration:underline;
         }
+/* PROJECTS */
 
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.project-card{
+    background:#161b22;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #30363d;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    border-color:#58a6ff;
+    box-shadow:0 0 20px rgba(88,166,255,0.2);
+}
+
+.project-card h4{
+    color:#58a6ff;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.project-card p{
+    margin-bottom:25px;
+    color:#c9d1d9;
+}
+
+.project-btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#238636;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.project-btn:hover{
+    background:#2ea043;
+}
         /* FOOTER */
 
         footer{
@@ -525,7 +571,77 @@ header h1{
         </div>
 
     </section>
+<!-- PROJECTS -->
 
+<section id="projects">
+
+    <h3>Projects</h3>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+
+            <h4>Active Directory Health Monitoring Framework</h4>
+
+            <p>
+                Enterprise-grade PowerShell framework designed to monitor
+                Active Directory infrastructure health, replication,
+                FSMO roles, DNS status, and critical services.
+            </p>
+
+            <a class="project-btn"
+               href="https://github.com/prakash-palanivel/AD-Health-Monitoring-Framework"
+               target="_blank">
+
+               View Repository
+
+            </a>
+
+        </div>
+
+        <div class="project-card">
+
+            <h4>Secure SFTP Infrastructure</h4>
+
+            <p>
+                Production-ready secure SFTP infrastructure implementation
+                with OpenSSH hardening, Fail2Ban protection,
+                user isolation, and enterprise security controls.
+            </p>
+
+            <a class="project-btn"
+               href="#"
+               target="_blank">
+
+               Coming Soon
+
+            </a>
+
+        </div>
+
+        <div class="project-card">
+
+            <h4>AD Change Monitoring Framework</h4>
+
+            <p>
+                Active Directory auditing and monitoring framework
+                designed to track changes, security events,
+                administrative activities, and infrastructure modifications.
+            </p>
+
+            <a class="project-btn"
+               href="#"
+               target="_blank">
+
+               Coming Soon
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
     <!-- EXPERIENCE -->
 
     <section id="experience">
