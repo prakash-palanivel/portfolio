@@ -25,9 +25,36 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             color:#ffffff;
             line-height:1.6;
         }
+.project-image{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:15px;
+    border:1px solid #30363d;
+    transition:0.3s ease;
+}
 
-        /* NAVBAR */
+.project-image:hover{
+    transform:scale(1.02);
+    box-shadow:0 0 20px rgba(0,123,255,0.4);
+}
 
+.tech-badges{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.tech-badges span{
+    background:#21262d;
+    border:1px solid #30363d;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:14px;
+    color:#58a6ff;
+}
+
+/* NAVBAR */
         .navbar{
             position:fixed;
             top:0;
@@ -628,13 +655,27 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         <div class="project-card">
 
             <h4>Active Directory Health Monitoring Framework</h4>
+<img src="images/ad-framework.png"
+     alt="AD Framework Architecture"
+     class="project-image">
 
+<img src="images/ad-report.png"
+     alt="AD Health Report"
+     class="project-image">
             <p>
                 Enterprise-grade PowerShell framework designed to monitor
                 Active Directory infrastructure health, replication,
                 FSMO roles, DNS status, and critical services.
             </p>
+<div class="tech-badges">
 
+<span>PowerShell</span>
+<span>Active Directory</span>
+<span>HTML</span>
+<span>Monitoring</span>
+<span>Automation</span>
+
+</div>
             <a class="project-btn"
                href="https://github.com/prakash-palanivel/AD-Health-Monitoring-Framework"
                target="_blank">
