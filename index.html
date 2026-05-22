@@ -187,7 +187,11 @@ object-fit:cover;
             font-size:18px;
             color:#c9d1d9;
         }
-
+.section-subtitle{
+    color:#8b949e;
+    margin-bottom:35px;
+    font-size:18px;
+}
         /* SKILLS */
 
         .skills-grid{
@@ -335,7 +339,10 @@ object-fit:cover;
     margin-bottom:15px;
     font-size:22px;
 }
-
+.project-card h4 i{
+    margin-right:10px;
+    color:#58a6ff;
+}
 .project-card p{
     margin-bottom:25px;
     color:#c9d1d9;
@@ -353,6 +360,8 @@ object-fit:cover;
 
 .project-btn:hover{
     background:#2ea043;
+    transform:translateY(-3px);
+    box-shadow:0 0 15px rgba(46,160,67,0.5);
 }
         /* FOOTER */
 /* STATS */
@@ -654,12 +663,14 @@ object-fit:cover;
 <section id="projects">
 
     <h3>Projects</h3>
-
+<p class="section-subtitle">
+Enterprise infrastructure, automation, monitoring, and security engineering projects.
+</p>
     <div class="projects-container">
 
         <div class="project-card">
 
-            <h4>Active Directory Health Monitoring Framework</h4>
+            <h4><i class="fas fa-server"></i> Active Directory Health Monitoring Framework</h4>
             
 <img src="images/ad-framework.png"
      alt="AD Framework Architecture"
@@ -701,7 +712,7 @@ object-fit:cover;
         </div>
 <div class="project-card">
 
-    <h4>Secure Linux SFTP Infrastructure</h4>
+    <h4><i class="fas fa-shield-alt"></i> Secure Linux SFTP Infrastructure</h4>
 
     <p>
         Secure enterprise SFTP infrastructure built on Linux using OpenSSH,
@@ -731,7 +742,7 @@ object-fit:cover;
 </div>
       <div class="project-card">
 
-    <h4>Enterprise Zabbix Monitoring Infrastructure</h4>
+    <h4><i class="fas fa-chart-line"></i> Enterprise Zabbix Monitoring Infrastructure</h4>
     
     <img src="images/zabbix-dashboard.png"
      alt="Zabbix Dashboard"
@@ -764,7 +775,7 @@ object-fit:cover;
 
         <div class="project-card">
 
-            <h4>AD Change Monitoring Framework</h4>
+            <h4><i class="fas fa-user-shield"></i> AD Change Monitoring Framework</h4>
 
             <p>
                 Active Directory auditing and monitoring framework
@@ -774,7 +785,6 @@ object-fit:cover;
 
             <a class="project-btn"
                href="#"
-               target="_blank">
 
                Coming Soon
 
@@ -1134,7 +1144,7 @@ object-fit:cover;
 
     <footer>
 
-        © 2026 Prakash Palanivel | Portfolio Website
+        © 2026 Prakash Palanivel | Infrastructure & System Administration Engineer
 
     </footer>
 
