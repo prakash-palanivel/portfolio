@@ -919,6 +919,119 @@ Enterprise infrastructure, automation, monitoring, and security engineering proj
 </div>
      </div>   
 </section>
+  .architecture-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.arch-card{
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.arch-card:hover{
+    transform:translateY(-10px);
+    border-color:#58a6ff;
+    box-shadow:0 0 20px rgba(88,166,255,0.2);
+}
+
+.arch-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.arch-content{
+    padding:25px;
+}
+
+.arch-content h4{
+    color:#58a6ff;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.arch-content p{
+    color:#c9d1d9;
+    font-size:16px;
+}  
+    <section id="architecture">
+
+    <h3>Infrastructure Architecture Gallery</h3>
+
+    <p class="section-subtitle">
+        Enterprise infrastructure architecture, monitoring topology,
+        cloud operations, virtualization, and security engineering designs.
+    </p>
+
+    <div class="architecture-gallery">
+
+        <div class="arch-card">
+
+            <img src="images/ad-framework.png"
+                 alt="AD Architecture">
+
+            <div class="arch-content">
+
+                <h4>Active Directory Architecture</h4>
+
+                <p>
+                    Enterprise Active Directory monitoring and health
+                    management architecture with PowerShell automation,
+                    replication monitoring, DNS validation,
+                    and reporting framework.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="arch-card">
+
+            <img src="images/zabbix-dashboard.png"
+                 alt="Zabbix Architecture">
+
+            <div class="arch-content">
+
+                <h4>Zabbix Monitoring Architecture</h4>
+
+                <p>
+                    Enterprise monitoring infrastructure using Zabbix,
+                    Grafana dashboards, alerting mechanisms,
+                    Linux monitoring agents, and centralized monitoring operations.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="arch-card">
+
+            <img src="images/sftp-linux.png"
+                 alt="SFTP Infrastructure">
+
+            <div class="arch-content">
+
+                <h4>Secure Linux SFTP Infrastructure</h4>
+
+                <p>
+                    Hardened Linux-based secure file transfer infrastructure
+                    implementing OpenSSH, Fail2Ban protection,
+                    user isolation, and enterprise security controls.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
     <!-- EXPERIENCE -->
 
     <section id="experience">
